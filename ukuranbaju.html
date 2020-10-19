@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>admin</title>
+    <link rel="stylesheet" href="assets/miligram/milligram.min.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/admin.css" />
+    <link rel="stylesheet" href="css/color.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+  </head>
+  <body>
+    <div id="page-container" class="sidebar-open">
+      <!-- <div id="page-overlay"></div> -->
+
+      <!-- navbar -->
+      <nav id="sidebar">
+        <div class="sidebar-header">
+          <div class="float-left">
+            <a href="#" id="close-sidebar" class="bundar"
+              ><i class="fas fa-fw fa-times"></i
+            ></a>
+          </div>
+          <a href="landing.html">
+            <span class="sidebar-header-title">Sditharum.id</span>
+          </a>
+        </div>
+
+        <section class="sidebar-logo">
+          <div class="logo-circle">
+            <i class="far fa-user"></i>
+          </div>
+        </section>
+
+        <section class="row">
+          <ul class="column sidebar-nav">
+            <li class="nav-section-heading">SISWA</li>
+            <li>
+              <a class="sentuh" href="datacalon.html">
+                <i class="fa fa-bell" aria-hidden="true"></i>
+                <span class="masuk">Data Calon Siswa</span>
+              </a>
+            </li>
+            <li>
+              <a class="sentuh" href="#" class="">
+                <i class="fa fa-bell" aria-hidden="true"></i>
+                <span class="masuk">Pengumuman</span>
+              </a>
+            </li>
+            <li>
+              <a class="sentuh" href="#" class="">
+                <i class="fa fa-bell" aria-hidden="true"></i>
+                <span class="masuk">Ukuran Baju</span>
+              </a>
+            </li>
+            <li class="nav-section-heading">Operator</li>
+            <li>
+              <a class="sentuh" href="#" class="">
+                <i class="fa fa-bell" aria-hidden="true"></i>
+                <span class="masuk">Token</span>
+              </a>
+            </li>
+            <li>
+              <a class="sentuh" href="#" class="">
+                <i class="fa fa-bell" aria-hidden="true"></i>
+                <span class="masuk">Data Pendaftar</span>
+              </a>
+            </li>
+            <li>
+              <a class="sentuh" href="#" class="">
+                <i class="fa fa-bell" aria-hidden="true"></i>
+                <span class="masuk">Jadwal</span>
+              </a>
+            </li>
+            <li>
+              <a class="sentuh" href="#" class="">
+                <i class="fa fa-bell" aria-hidden="true"></i>
+                <span class="masuk">Data Ukuran Baju</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </nav>
+
+      <!-- header -->
+      <div id="page-content" class="container-fluid">
+        <div class="row page-header">
+          <div class="column">
+            <a href="#" id="toggle-sidebar" class="bundar"
+              ><i class="fas fa-fw fa-bars"></i
+            ></a>
+          </div>
+          <div class="column">
+            <div class="skanan">
+              <p>user</p>
+              <a href="landing.html" class="button">LOGOUT</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- content -->
+      <div id="page-body">
+        <h3>Ukuran Baju Ananda</h3>
+        <h4>isi ukuran baju ananda sesuai dengan tabel ukuran berikut!</h4>
+        <button id="tombolmodal" class="button tombolmodal">
+          <i class="far fa-edit"></i> tabel ukuran baju
+        </button>
+        <button id="tombolmodal" class="button tombolmodal">
+          <i class="far fa-edit"></i> ukuran baju ananda
+        </button>
+      </div>
+
+      <!-- modal -->
+      <div id="modal" class="modal">
+        <div class="modalcard">
+          <div class="modaljudul">
+            <p>Tabel Ukuran Baju</p>
+            <i id="tutup" class="fas fa-times-circle tutup"></i>
+          </div>
+          <div class="modalbody">
+            <img src="img/ukuran.svg" alt="1" />
+            <br /><br />
+            <div class="table-responsive">
+              <p class="lead">Ukuran Baju Siswa Putra</p>
+              <table class="table">
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">S</th>
+                    <th scope="col">M</th>
+                    <th scope="col">X</th>
+                    <th scope="col">XL</th>
+                    <th scope="col">XXL</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Lebar Dada</th>
+                    <td>40 cm</td>
+                    <td>42 cm</td>
+                    <td>44 cm</td>
+                    <td>46 cm</td>
+                    <td>48 cm</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Panjang Baju</th>
+                    <td>53 cm</td>
+                    <td>56 cm</td>
+                    <td>59 cm</td>
+                    <td>62 cm</td>
+                    <td>64 cm</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Lebar Pinggang</th>
+                    <td>38 cm</td>
+                    <td>40 cm</td>
+                    <td>43 cm</td>
+                    <td>46 cm</td>
+                    <td>49 cm</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Panjang Celana</th>
+                    <td>71 cm</td>
+                    <td>74 cm</td>
+                    <td>77 cm</td>
+                    <td>80 cm</td>
+                    <td>83 cm</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <br />
+            <div class="table-responsive">
+              <p class="lead">Ukuran Baju Siswa Putri</p>
+              <table class="table">
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">S</th>
+                    <th scope="col">M</th>
+                    <th scope="col">X</th>
+                    <th scope="col">XL</th>
+                    <th scope="col">XXL</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Lebar Dada</th>
+                    <td>40 cm</td>
+                    <td>42 cm</td>
+                    <td>44 cm</td>
+                    <td>46 cm</td>
+                    <td>48 cm</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Panjang Baju</th>
+                    <td>53 cm</td>
+                    <td>56 cm</td>
+                    <td>59 cm</td>
+                    <td>62 cm</td>
+                    <td>64 cm</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Lebar Pinggang</th>
+                    <td>36 cm</td>
+                    <td>38 cm</td>
+                    <td>40 cm</td>
+                    <td>42 cm</td>
+                    <td>44 cm</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Panjang Bawahan</th>
+                    <td>65 cm</td>
+                    <td>68 cm</td>
+                    <td>71 cm</td>
+                    <td>74 cm</td>
+                    <td>77 cm</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <br />
+            <div class="table-responsive">
+              <p class="lead">Ukuran Jilbab (Khusus Siswa Putri)</p>
+              <table class="table">
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">S</th>
+                    <th scope="col">M</th>
+                    <th scope="col">X</th>
+                    <th scope="col">XL</th>
+                    <th scope="col">XXL</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Panjang Depan</th>
+                    <td>62 cm</td>
+                    <td>64 cm</td>
+                    <td>66 cm</td>
+                    <td>68 cm</td>
+                    <td>70 cm</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Panjang Belakang</th>
+                    <td>70 cm</td>
+                    <td>72 cm</td>
+                    <td>74 cm</td>
+                    <td>77 cm</td>
+                    <td>79 cm</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="modal" class="modal">
+        <div class="modalcard">
+          <div class="modaljudul">
+            <p>Data Ukuran Baju Ananda</p>
+            <i id="tutup" class="fas fa-times-circle tutup"></i>
+          </div>
+          <div class="modalbody">
+            <form>
+              <label for="nama">Nama</label>
+              <input
+                type="text"
+                class="form-control"
+                id="nama"
+                aria-describedby="emailHelp"
+                placeholder="nama"
+              />
+
+              <label for="jeniskelamin ">Jenis Kelamin</label>
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option>Laki-laki</option>
+                <option>Perempuan</option>
+              </select>
+
+              <label for="ukuran">Ukuran Baju</label>
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option>Ukuran S</option>
+                <option>Ukuran M</option>
+                <option>Ukuran X</option>
+                <option>Ukuran XL</option>
+                <option>Ukuran XXL</option>
+              </select>
+
+              <label for="ukuran">Ukuran Celana / Bawahan</label>
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option>Ukuran S</option>
+                <option>Ukuran M</option>
+                <option>Ukuran X</option>
+                <option>Ukuran XL</option>
+                <option>Ukuran XXL</option>
+              </select>
+
+              <label for="ukuran">Ukuran Jilbab</label>
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option>Ukuran S</option>
+                <option>Ukuran M</option>
+                <option>Ukuran X</option>
+                <option>Ukuran XL</option>
+                <option>Ukuran XXL</option>
+              </select>
+              <br />
+              <br />
+              <button type="submit" class="button">simpan</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="js/admin.js"></script>
+  </body>
+</html>
